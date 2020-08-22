@@ -10,7 +10,7 @@
 **Packages:** pandas, sklearn, numpy, matplotlib, keras, TensorFlow
 
 ## Dataset
-Datased used was a daily stock prices of 500 companies from 2013 to 2018 with details are following:
+To predict stock using LSTM, datased used was a daily stock prices of 500 companies from 2013 to 2018 with details are following:
 *	Name
 *	Date
 *	Open
@@ -20,5 +20,8 @@ Datased used was a daily stock prices of 500 companies from 2013 to 2018 with de
 * Volume
 <br />In this project I chose open stock price for 1 company, which is GOOGL
 
+## Data Pre-Processing
+First, I did a feature scaling to the data to get optimal performance by using Scikit- Learn’s MinMaxScaler and scale the dataset to numbers between zero and one.
+<br />After that, since LSTM expect data to be in 3D format, I converted the data into a 3D dimension array with X_train samples, 60 timestamps, and one feature at each step.
 
 <br />![](https://github.com/novaldi21/ds_stock_prediction/blob/master/Stock_Prediction.png)
