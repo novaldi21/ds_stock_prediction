@@ -1,5 +1,5 @@
 # Stock Prediction: Project Overview 
-* Building a stock prediction model using LSTM (Long-Short Term Memory) Algorithm
+* Building a future stock prediction model using LSTM (Long-Short Term Memory) Algorithm
 * Data used was a daily stock prices of 500 companies from 2013 to 2018 from Kaggle
 * Data consisted with 7 columns and 1259 rows for each company
 * Model predicts open stock prices of GOOGL
@@ -10,7 +10,7 @@
 **Packages:** pandas, sklearn, numpy, matplotlib, keras, TensorFlow
 
 ## Dataset
-To predict stock using LSTM, datased used was a daily stock prices of 500 companies from 2013 to 2018 with details are following:
+To predict future stock using LSTM, datased used was a daily stock prices of 500 companies from 2013 to 2018 with details are following:
 *	Name
 *	Date
 *	Open
@@ -32,5 +32,7 @@ First, I built the LSTM model before building the test set. The LSTM model build
 <br />3. Adding Dense layer that specifies the output of 1 unit.
 <br />4. compile the model using adam optimizer and set the loss as the mean_squarred_error. This will compute the mean of the squared errors.
 <br />After adjustments, we fit the model to run on 100 epochs with a batch size of 32.
+
+Finally, I did the future stock prediction of GOOGL open price by merging the training set and the test set on the 0 axis, set the time step as 60, used MinMaxScaler to transform the new dataset, and reshaped the dataset afterward.
 
 <br />![](https://github.com/novaldi21/ds_stock_prediction/blob/master/Stock_Prediction.png)
