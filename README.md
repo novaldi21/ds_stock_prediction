@@ -24,4 +24,13 @@ To predict stock using LSTM, datased used was a daily stock prices of 500 compan
 First, I did a feature scaling to the data to get optimal performance by using Scikit- Learn’s MinMaxScaler and scale the dataset to numbers between zero and one.
 <br />After that, since LSTM expect data to be in 3D format, I converted the data into a 3D dimension array with X_train samples, 60 timestamps, and one feature at each step.
 
+## Model Building 
+
+First, I built the LSTM model before building the test set. The LSTM model building used Keras library with several adjustments, which are:
+<br />1. Adding 50 units which is the dimensionality of the output space to prevent overfitting.
+<br />2. Defining Dropout layers by 0.2, meaning that 20% of the layers will be dropped.
+<br />3. Adding Dense layer that specifies the output of 1 unit.
+<br />4. compile the model using adam optimizer and set the loss as the mean_squarred_error. This will compute the mean of the squared errors.
+<br />After adjustments, we fit the model to run on 100 epochs with a batch size of 32.
+
 <br />![](https://github.com/novaldi21/ds_stock_prediction/blob/master/Stock_Prediction.png)
