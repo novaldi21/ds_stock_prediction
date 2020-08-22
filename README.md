@@ -9,3 +9,5 @@
 ## Code and Resources Used 
 **Python Version:** 3.7  
 **Packages:** pandas, sklearn, numpy, matplotlib, keras, TensorFlow
+
+<br />![](https://github.com/novaldi21/ds_stock_prediction/blob/master/Stock_Prediction.png)
