@@ -31,7 +31,7 @@ First, I built the LSTM model before building the test set. The LSTM model build
 <br />2. Defining Dropout layers by 0.2, meaning that 20% of the layers will be dropped.
 <br />3. Adding Dense layer that specifies the output of 1 unit.
 <br />4. compile the model using adam optimizer and set the loss as the mean_squarred_error. This will compute the mean of the squared errors.
-<br />After adjustments, we fit the model to run on 100 epochs with a batch size of 32.
+<br />After adjustments, I fitted the model to run on 100 epochs with a batch size of 32.
 
 Finally, I did the future stock prediction of GOOGL open price by merging the training set and the test set on the 0 axis, set the time step as 60, used MinMaxScaler to transform the new dataset, and reshaped the dataset afterward.
 
