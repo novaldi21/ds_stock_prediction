@@ -18,7 +18,7 @@ To predict stock using LSTM, datased used was a daily stock prices of 500 compan
 *	Low 
 * Close
 * Volume
-<br />In this project I chose to predict open stock price for 1 company, which is GOOGL
+<br />In this project, I chose to predict open stock price for 1 company, which is GOOGL open stock prices.
 
 ## Data Pre-Processing
 First, I did a feature scaling to the data to get optimal performance by using Scikit- Learn’s MinMaxScaler and scale the dataset to numbers between zero and one.
