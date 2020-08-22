@@ -7,7 +7,7 @@
 
 ## Code and Resources Used 
 **Python Version:** 3.7  
-**Packages:** pandas, sklearn, numpy, matplotlib, keras, TensorFlow
+**Packages:** pandas, sklearn, numpy, matplotlib, keras, TensorFlow.
 
 ## Dataset
 To predict future stock using LSTM, datased used was a daily stock prices of 500 companies from 2013 to 2018 with details are following:
@@ -35,5 +35,10 @@ First, I built the LSTM model before building the test set. The LSTM model build
 
 Finally, I did the future stock prediction of GOOGL open price by merging the training set and the test set on the 0 axis, set the time step as 60, used MinMaxScaler to transform the new dataset, and reshaped the dataset afterward.
 
-Code for model building can be seen [here](https://github.com/novaldi21/ds_stock_prediction/blob/master/Stock_Prediction.ipynb)
+The code for model building can be seen [here](https://github.com/novaldi21/ds_stock_prediction/blob/master/Stock_Prediction.ipynb)
+
+## Model plotting
+The model plotting visualization between the real price and predicted price presented in the figure below. 
 <br />![](https://github.com/novaldi21/ds_stock_prediction/blob/master/Stock_Prediction.png)
+
+From the figure it can be seen that the prediction tools was able to predict the open stock price of GOOGL based on the plot movement on the graph.
