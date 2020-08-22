@@ -35,4 +35,5 @@ First, I built the LSTM model before building the test set. The LSTM model build
 
 Finally, I did the future stock prediction of GOOGL open price by merging the training set and the test set on the 0 axis, set the time step as 60, used MinMaxScaler to transform the new dataset, and reshaped the dataset afterward.
 
+Code for model building can be seen [here](https://github.com/novaldi21/ds_stock_prediction/blob/master/Stock_Prediction.ipynb)
 <br />![](https://github.com/novaldi21/ds_stock_prediction/blob/master/Stock_Prediction.png)
